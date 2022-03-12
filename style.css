@@ -46,3 +46,17 @@ body {
 .selected {
     opacity: 0.2;
 }
+
+audio {
+    position: fixed;
+    bottom:0; 
+    right:0;
+    margin: 5px 5px
+}
+
+.score{
+    position: fixed;
+    top:0; 
+    left:0;
+    margin: 5px 5px
+}

@@ -11,6 +11,8 @@ let green = document.querySelector('.green');
 let red = document.querySelector('.red');
 let blue = document.querySelector('.blue');
 let yellow = document.querySelector('.yellow');
+let scoreDisplay = document.querySelector('.score');
+
 
 //create random order of colors
 let  changeSequency = () => {
@@ -46,7 +48,8 @@ let checkSequency = ()=> {
         }
     }
     if (clickedSequency.length == sequency.length) {
-        alert(`Score: ${score}\nYou got it right! Starting next level!`)
+        alert(`Score: ${score}\nYou got it right! Starting next level!`);
+        scoreDisplay.innerHTML = `Score: ${score}\n`;
         nextLevel();
         
     }
@@ -84,10 +87,10 @@ let nextLevel = ()=>{
 
 //function for the game over
 let gameOver = ()=>{
+    scoreDisplay.innerHTML = `Score: 0`;
     alert(`Score: ${score}!\nYou lost the game!\nClick OK to start a new game`);
     sequency = [];
     clickedSequency = [];
-    
     playGame();
 }
 
@@ -95,7 +98,6 @@ let gameOver = ()=>{
 let playGame = ()=>{
     alert('Welcome to the Genesis game! starting new game!')
     score = 0;
-
     nextLevel();
 }
 
