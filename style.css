@@ -13,7 +13,7 @@ body {
 
 .genius {
   display: grid;
-  grid-template-areas: 'verde vermelho' 'azul amarelo';
+  grid-template-areas: 'green-camp red-camp' 'blue-camp yellow-camp';
   grid-gap: 10px;
   border: 1px solid #000000;
   background-color: #000000;
@@ -23,22 +23,22 @@ body {
 }
 
 .green {
-  grid-area: verde;
+  grid-area: green-camp;
   background-color: green;
   border-top-left-radius: 100%;
 }
 .red {
-  grid-area: vermelho;
+  grid-area: red-camp;
   background-color: red;
   border-top-right-radius: 100%;
 }
 .blue {
-  grid-area: azul;
+  grid-area: blue-camp;
   background-color: blue;
   border-bottom-left-radius: 100%;
 }
 .yellow {
-  grid-area: amarelo;
+  grid-area: yellow-camp;
   background-color: yellow;
   border-bottom-right-radius: 100%;
 }
