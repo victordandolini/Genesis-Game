@@ -6,7 +6,7 @@
 <!--About session-->
 <h1 align="center">Genius Game<br>Digital Innovation One</h1>
 
-<img src="./src/assets/readme/badge.png" title="Badge" width="70" height="70">
+<img src="https://github.com/victordandolini/Resgate-Game/blob/main/src/assets/readme/banner.png" title="Badge" width="70" height="70">
 
 Bootcamp Eduzz Fullstack Developer #3 the [Digital Innovation One](https://digitalinnovation.one/).
 
