@@ -21,6 +21,7 @@ In this project, the challenge will create a Genesis game using only HTML, CSS a
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
+<h3> :calling: Preview Project</h3>
 <h1 align="center">
   <img alt="previewgenius" title="genius-game" src="./assets/Social%20preview%20Genius%20Game-min.png" />
 </h1>
