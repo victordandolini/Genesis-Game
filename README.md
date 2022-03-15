@@ -1,12 +1,12 @@
 <!--Banner session-->
 <p align="center">
-  <img src="./assets/badge.png" alt="DIO" title="Digital Innovation One">
+  <img src="./assets/banner.png" alt="DIO" title="Digital Innovation One">
 </p>
 
 <!--About session-->
 <h1 align="center">Genius Game<br>Digital Innovation One</h1>
 
-<img src="./assets/banner.png" title="Badge" width="70" height="70">
+<img src="./assets/badge.png" title="Badge" width="70" height="70">
 
 Bootcamp Eduzz Fullstack Developer #3 the [Digital Innovation One](https://digitalinnovation.one/).
 
