@@ -1,6 +1,6 @@
 <!--Banner session-->
 <p align="center">
-  <img src="https://github.com/victordandolini/Resgate-Game/blob/main/src/assets/readme/badge.png" alt="DIO" title="Digital Innovation One">
+  <img src="./assets/badge.png" alt="DIO" title="Digital Innovation One">
 </p>
 
 <!--About session-->
