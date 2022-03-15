@@ -1,11 +1,6 @@
 let sequency = [];
 let clickedSequency = [];
-let score = 0;
-
-//0 = green
-//1 = red
-//2 = blue
-//3 = yellow
+var score = 0;
 
 let green = document.querySelector('.green');
 let red = document.querySelector('.red');
@@ -23,6 +18,7 @@ let  changeSequency = () => {
     for(let i in sequency) {
         let elementColor = createElementColor(sequency[i]);
         lightColor(elementColor, Number(i) + 1);
+         
     }
 
 }
@@ -44,15 +40,10 @@ let checkSequency = ()=> {
     for (let i in clickedSequency) {
         if (clickedSequency[i] != sequency[i]) {
             gameOver();
-            break;            
+             break;            
         }
     }
-    if (clickedSequency.length == sequency.length) {
-        alert(`Score: ${score}\nYou got it right! Starting next level!`);
-        scoreDisplay.innerHTML = `Score: ${score}\n`;
-        nextLevel();
-        
-    }
+    
 }
 
 //player click function
@@ -64,6 +55,10 @@ let click = (color) => {
         createElementColor(color).classList.remove('selected');
         checkSequency();
     }, 250); 
+
+    if (clickedSequency.length == sequency.length) {
+        nextLevel();
+    }
 }
 
 //function that returns a color
@@ -82,23 +77,26 @@ let createElementColor = (color) => {
 //function for next game level
 let nextLevel = ()=>{
     score++;
-    changeSequency();
+    scoreDisplay.innerHTML = `Score: ${score}\n`;
+    
+    setTimeout(()=> {
+        changeSequency();
+    }, 1100); 
 }
 
 //function for the game over
-let gameOver = ()=>{
+let gameOver = ()=> {
     scoreDisplay.innerHTML = `Score: 0`;
-    alert(`Score: ${score}!\nYou lost the game!\nClick OK to start a new game`);
+    alert(`Score: ${score} \nYou lost the game!\nClick start to restart the game`);
     sequency = [];
     clickedSequency = [];
-    playGame();
+    score = 0;
+    
 }
 
 //function for the play game
 let playGame = ()=>{
-    alert('Welcome to the Genesis game! starting new game!')
-    score = 0;
-    nextLevel();
+    alert('Welcome to the Genesis game!\nClick start game!')
 }
 
 //Click values

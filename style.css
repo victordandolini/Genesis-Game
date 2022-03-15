@@ -1,6 +1,9 @@
 body {
   margin: 0;
   background-color: grey;
+  font-family: "Ramaraja", serif;
+  color:white;
+  background-image: url(assets/depositphotos_10052421-stock-photo-green-grass-texture-background-field.jpg);
 }
 
 .main {
@@ -13,7 +16,7 @@ body {
 
 .genius {
   display: grid;
-  grid-template-areas: 'green-camp red-camp' 'blue-camp yellow-camp';
+  grid-template-areas: "green-camp red-camp" "blue-camp yellow-camp";
   grid-gap: 10px;
   border: 1px solid #000000;
   background-color: #000000;
@@ -44,19 +47,43 @@ body {
 }
 
 .selected {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 audio {
-    position: fixed;
-    bottom:0; 
-    right:0;
-    margin: 5px 5px
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 5px 5px;
 }
 
-.score{
+.score {
+  position: fixed;
+  top: 0;
+  left: 5px;
+  margin: 5px 5px;
+  font-size: 50px;
+}
+
+button {
+  position: fixed;
+  top: 70px;
+  left: 30px;
+  margin: 5px 5px;
+  border-radius: 10px;
+  background-color: rgb(89, 165, 89);
+  color: white;
+  font-size: 25px;
+}
+
+@media (max-width: 720px) {
+  .genius {
+    height: 400px;
+    width: 350px;
+    margin-top: 50px;
+  }
+  audio {
     position: fixed;
-    top:0; 
-    left:0;
-    margin: 5px 5px
+    right: 10%
+  }
 }

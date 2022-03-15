@@ -6,11 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
     <title>Genius Game</title>
 </head>
 
 <body>
     <div class="score">Score: 0</div>
+    <button onclick="changeSequency()">
+        START
+    </button>
     <div class="main">
         <div class="genius">
             <div class="green"></div>
@@ -19,8 +25,8 @@
             <div class="yellow"></div>
         </div>
     </div>
-    <audio preload="auto" autoplay="true" loop="true" controls >
-    <source src="./04 - Spring Yard Zone MP3.mp3" type="audio/mpeg">
+    <audio preload="metadata" autoplay="true" loop="true" controls>
+        <source src="assets/04 - Spring Yard Zone MP3.mp3" type="audio/mpeg">
     </audio>
     <script type="text/javascript" src="./script.js"></script>
 </body>
